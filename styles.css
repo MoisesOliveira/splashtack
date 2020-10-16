@@ -1078,13 +1078,16 @@ a.article, a.article:hover {
 }
 
 .card {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  
 }
 
 .card__inner {
-  background-color: #2bcf83;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00ff00, #22a822);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00ff00, #22a822); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #eceef1;
   cursor: pointer;
   font-size: 1.5em;
@@ -1092,11 +1095,18 @@ a.article, a.article:hover {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
+  transition: .5s all ease-in;
   width: 100%;
   border-radius: 5px;
   width: 60%;
   margin: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
+
+.card__inner:hover{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #22a822, #00ff00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #22a822, #00ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card__inner:after {
@@ -1113,8 +1123,9 @@ a.article, a.article:hover {
   position: relative;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
-  width: 100%;
+  width: 60%;
   border-radius: 5px;
+  margin: auto;
 }
 
 .card__expander .fa {
@@ -1191,31 +1202,33 @@ a.article, a.article:hover {
   width: 100%;
 }
 
-.ula > ul li{
-  text-decoration: none;
-  list-style-type: none;
-  transition: .5s;
-} 
 
-.ula > ul li a{
+
+.ula > a{
   transition: .5s;
   text-decoration: none;
   color: #000;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
-  display: block;
   border-radius: 5px;
   text-transform: none;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
 }
 
-.ula > ul li a:hover{
+.ula > a:hover{
   background: #000;
   color: rgb(0, 255, 0);
 }
 
 .logo{
   color: #fff;
+  font-size: 1.3em;
+}
+
+.p-3{
+  background: #454599;
 }
 
 
@@ -1302,6 +1315,12 @@ a.article, a.article:hover {
     transform: rotate(-45deg) translate(1px, -1px);
 }
 
+.card__expander{
+  width: 100%;
+}
 
+.card__inner{
+  width: 100%;
+}
 
 }

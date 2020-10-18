@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="html">
+    <!-- Scroll Indicator -->
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar htmlBar" id="myBar"></div>
+        </div>
+    </div>
+    <!-- Scroll Indicator -->
+
+    <section class="textContainer">
+        <div class="center">
+            <img src="images/html.png" alt="">
+        </div>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+    </section>
+
+    <section class="textContainer">
+        <h2>Encabezados</h2>
+        <p>Los encabezados se utilizan para crear los títulos de una página web.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            
+            <div class="code" id="htmlCode">
+                <div class="space">
+                    <h1>&lt;h1&gt;Encabezado h1&lt;/h1&gt;</h1>
+                </div>
+                <div class="space">
+                    <h2>&lt;h2&gt;Encabezado h2&lt;/h2&gt;</h2>
+                </div>
+                <div class="space">
+                    <h3>&lt;h3&gt;Encabezado h3&lt;/h3&gt;</h3>
+                </div>
+                <div class="space">
+                    <h4>&lt;h4&gt;Encabezado h4&lt;/h4&gt;</h4>
+                </div>
+                <div class="space">
+                    <h5>&lt;h5&gt;Encabezado h5&lt;/h5&gt;</h5>
+                </div>
+                <div class="space">
+                    <h6>&lt;h6&gt;Encabezado h6&lt;/h6&gt;</h6>
+                </div>
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            
+            <div class="resultado">
+                <div class="space">
+                    <h1>Encabezado h1</h1>
+                </div>
+                <div class="space">
+                    <h2>Encabezado h2</h2>
+                </div>
+                <div class="space">
+                    <h3>Encabezado h3</h3>
+                </div>
+                <div class="space">
+                    <h4>Encabezado h4</h4>
+                </div>
+                <div class="space">
+                    <h5>Encabezado h5</h5>
+                </div>
+                <div class="space">
+                    <h6>Encabezado h6</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="textContainer">
+        <h2>Párrafos</h2>
+        <p>Un párrafo siempre empieza en una línea nueva y usualmente es un bloque de texto.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <p>&lt;p&gt;Este es un párrafo&lt;/p&gt;</p>
+                <p>&lt;p&gt;Este es otro párrafo&lt;/p&gt;</p>
+            </div>
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <p>Este es un párrafo</p>
+                <p>Este es otro párrafo</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Estilos</h2>
+        <p>El atributo style se utiliza para añadir estilos a un elemento: El color, el tipo de fuente, el tamaño del texto y más.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <p>&lt;p&gt;Soy un párrafo normal&lt;/p&gt;</p>
+                <p>&lt;p style="color: red"&gt;Soy un párrafo rojo&lt;/p&gt;</p>
+                <p>&lt;p style="font-size: 50px"&gt;Soy un párrafo grande&lt;/p&gt;</p>
+            </div>
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <p>Soy un párrafo normal</p>
+                <p style="color: red">Soy un párrafo rojo</p>
+                <p style="font-size: 50px;">Soy un párrafo grande</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Formato de Texto</h2>
+        <p>HTML cuenta con varios elementos para darle formato al texto.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">
+                    &lt;p&gt;Texto normal&lt;p&gt;<br>
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;b&gt;Texto en negrita&lt;/b&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;strong&gt;Texto importante&lt;/strong&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;em&gt;Texto enfatizado&lt;/em&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;mark&gt;Texto resaltado&lt;/mark&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;small&gt;Texto pequeño&lt;/small&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;del&gt;Texto eliminado &lt;/del&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;ins&gt;Texto insertado&lt;/ins&gt;&lt;/p&gt;
+                </div>
+                <div class="space">
+                    &lt;p&gt;&lt;sub&gt;Texto de subíndice&lt;/sub&gt;&lt;/p&gt;
+                </div>
+                
+                    &lt;p&gt;&lt;sup&gt;Texto de superíndice&lt;/sup&gt;&lt;/p&gt;
+
+            </div>
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <p>Texto normal</p>
+                <p><b>Texto en negrita</b></p>
+                <p><strong>Texto importante</strong></p>
+                <p><em>Texto enfatizado</em></p>
+                <p><mark>Texto resaltado</mark></p>
+                <p><small>Texto pequeño</small></p>
+                <p><del>Texto eliminado </del></p>
+                <p><ins>Texto insertado</ins></p>
+                <p><sub>Texto de subíndice</sub></p>
+                <p><sup>Texto de superíndice</sup></p>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="textContainer">
+        <h2>Citación</h2>
+        <p>Los elementos de citación se utilizan para mejorar la tipografía y la semántica de una página web.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">
+                    &lt;blockquote cite="www.paginadecitacion.com"&gt;El navegador suele indentar los elementos
+                    &lt;blockquote&gt;&lt;/blockquote&gt;
+                </div>
+            
+                <p>La meta de WWF es: <q>Construir un futuro donde las personas vivan en harmonía con la naturaleza.</q></p>
+            
+                <div class="space">
+                    &lt;p&gt;La &lt;abbr title="Organización Mundial de la Salud"&gt;OMS&lt;/abbr&gt; fue fundada en 1948&lt;/p&gt;
+                </div>
+            
+                <div class="space">
+                    &lt;address&gt;<br>
+                    Escrito por Hernando Abella.&lt;br&gt;<br>
+                    Visitame en:&lt;br&gt;<br>
+                    hernandoabella.com&lt;br&gt;<br>
+                    Box 505, Disneyland&lt;br&gt;<br>
+                    USA<br>
+                    &lt;/address&gt;
+                </div>
+            
+                <div class="space">
+                    &lt;p&gt;&lt;cite&gt;El grito&lt;/cite&gt; por Edvard Munch. Pintado en 1893.&lt;/p&gt;
+                </div>
+            
+                <div class="space">
+                    &lt;bdo dir="rtl"&gt;Este texto será escrito de derecha a izquierda&lt;/bdo&gt;
+                </div>
+            
+            </div>
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+            
+                <div class="space">
+                    <blockquote cite="www.paginadecitacion.com">El navegador suele indentar los elementos &lt;blockquote&gt;
+                    </blockquote>
+                </div>
+            
+                <p>La meta de WWF es: <q>Construir un futuro donde las personas vivan en harmonía con la naturaleza.</q></p>
+            
+                <p>La <abbr title="Organización Mundial de la Salud">OMS</abbr> fue fundada en 1948</p>
+            
+                <div class="space">
+                    <address>
+                        Escrito por Hernando Abella.<br>
+                        Visitame en:<br>
+                        hernandoabella.com<br>
+                        Box 505, Disneyland<br>
+                        USA
+                    </address>
+                </div>
+            
+                <p><cite>El grito</cite> por Edvard Munch. Pintado en 1893.</p>
+            
+                <div class="space">
+                    <bdo dir="rtl">Este texto será escrito de derecha a izquierda</bdo>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Comentarios</h2>
+        <p>Los comentarios se utilizan para añadir texto informativo a tu código HTML.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">
+                    &lt;!-- Este es un comentario --&gt;
+                </div>
+                <div class="space">
+                    &lt;!-- Escribe tus comentarios aquí --&gt;
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section class="textContainer">
+        <h2>Colores</h2>
+        <p>En HTML los colores se definen por los nombres del color, RGB, HEX, HSL, RGBA y HSLA</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            
+            <div class="code" id="htmlCode">
+                <div class="space">
+                    &lt;div style="background: Tomato"&gt;Tomato&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: Orange"&gt;Orange&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: DodgerBlue"&gt;DodgerBlue&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: MediumSeaGreen"&gt;MediumSeaGreen&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: Gray"&gt;Gray&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: rgb(255, 0, 0)"&gt;rgb(255, 0, 0)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: rgb(0, 0, 255)"&gt;rgb(0, 0, 255)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: rgb(60, 179, 113"&gt;rgb(60, 179, 113&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: rgb(238, 130, 238)"&gt;rgb(238, 130, 238)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: rgb(255, 165, 0)"&gt;rgb(255, 165, 0)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: #ff0000"&gt;#ff0000&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: #0000ff"&gt;#0000ff&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: #3cb371"&gt;#3cb371&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: #ee82ee"&gt;#ee82ee&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: #ffa500"&gt;#ffa500&lt;/div&gt;
+                </div>
+            
+                <div class="space">
+                    &lt;div style="background: hsl(0, 100%, 50%)"&gt;hsl(0, 100%, 50%)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: hsl(240, 100%, 50%)"&gt;hsl(240, 100%, 50%)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: hsl(147, 50%, 47%)"&gt;hsl(147, 50%, 47%)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: hsl(300, 76%, 72%)"&gt;hsl(300, 76%, 72%)&lt;/div&gt;
+                </div>
+                <div class="space">
+                    &lt;div style="background: hsl(39, 100%, 50%)"&gt;hsl(39, 100%, 50%)&lt;/div&gt;
+                </div>
+            
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            
+            <div class="resultado">
+            
+                <div class="Color">
+                    <div class="tomato">Tomato</div>
+                    <div class="orange">Orange</div>
+                    <div class="dodgerblue">DodgerBlue</div>
+                    <div class="mediumseagreen">MediumSeaGreen</div>
+                    <div class="gray">Gray</div>
+                </div>
+            
+                <div class="RGB">
+                    <div class="rojoRgb">rgb(255, 0, 0)</div>
+                    <div class="azulRgb">rgb(0, 0, 255)</div>
+                    <div class="verdeRgb">rgb(60, 179, 113</div>
+                    <div class="violetaRgb">rgb(238, 130, 238)</div>
+                    <div class="naranjaRgb">rgb(255, 165, 0)</div>
+                </div>
+            
+                <div class="HEX">
+                    <div class="rojoHex">#ff0000</div>
+                    <div class="azulHex">#0000ff</div>
+                    <div class="verdeHex">#3cb371</div>
+                    <div class="violetaHex">#ee82ee</div>
+                    <div class="naranjaHex">#ffa500</div>
+                </div>
+            
+                <div class="HSL">
+                    <div class="rojoHsl">hsl(0, 100%, 50%)</div>
+                    <div class="azulHsl">hsl(240, 100%, 50%)</div>
+                    <div class="verdeHsl">hsl(147, 50%, 47%)</div>
+                    <div class="violetaHsl">hsl(300, 76%, 72%)</div>
+                    <div class="naranjaHsl">hsl(39, 100%, 50%)</div>
+                </div>
+            
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="textContainer">
+        <h2>CSS</h2>
+        <p>CSS significa hojas de estilo en cascada, estas hojas de estilos controlan el diseño de todas las páginas web.</p>
+        <p>Con CSS puedes controlar el color, la fuente, el tamaño del texto, el espaciado entre los elementos, la posición de los elementos, las imágenes de fondo, los colores de fondo, y todo lo relacionado con el aspecto y el diseño de una página web. </p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;!DOCTYPE html&gt;<br></div>
+                <div class="space">&lt;html lang="es"&gt;<br></div>
+            
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport"
+                    content="width=device-width, initial-scale=1.0"&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;CSS&lt;/title&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head></div>
+            
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="elemento1">Elemento 1&lt;/div&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="elemento2">Elemento 2&lt;/div&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="elemento3">Elemento 3&lt;/div&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="elemento4">Elemento 4&lt;/div&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="elemento4">Elemento 5&lt;/div&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</div>
+            
+                <div class="space">&lt;/html&gt;</div>
+            </div>
+            
+            <div class="code" id="htmlCode">
+                <div class="space">.elemento1{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;color: red;</div>
+                <div class="space">}</div><br>
+                <div class="space">.elemento2{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;color: #fff;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;background: blue;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;width: 150px;</div>
+                <div class="space">}</div><br>
+                <div class="space">.elemento3{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;color: violet;</div>
+                <div class="space">}</div><br>
+                <div class="space">.elemento4{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;font-size: 50px;</div>
+                <div class="space">}</div><br>
+                <div class="space">.elemento5{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: line-through;</div>
+                <div class="space">}</div>
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            
+            </div>
+            
+            <div class="resultado">
+                <div class="elemento1">elemento 1</div>
+                <div class="elemento2">elemento 2</div>
+                <div class="elemento3">elemento 3</div>
+                <div class="elemento4">elemento 4</div>
+                <div class="elemento5">elemento 5</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="textContainer">
+        <h2>Enlaces</h2>
+        <p>Los enlaces se encuentran en casi todas las páginas web. Un enlace no tiene que ser texto, también puede ser una imagen o cualquer otro elemento HTML.</p><br>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;a href="https:/www.google.com/" class="enlace">Enlace normal&lt;/a&gt;</div>
+                <div class="space">&lt;a href="https:/www.google.com/" target="_self">Enlace con atributo _self&lt;/a&gt;</div>
+                <div class="space">&lt;a href="https:/www.google.com/" target="_blank">Enlace con atributo _blank&lt;/a&gt;</div>
+                <div class="space">&lt;a href="https:/www.google.com/" target="_parent">Enlace con atributo _parent&lt;/a&gt;</div>
+                <div class="space">&lt;a href="https:/www.google.com/" target="_top">Enlace con atributo _top&lt;/a&gt;</div>
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <a href="https:/www.google.com/" target="" class="enlace">Enlace normal</a>
+                <a href="https:/www.google.com/" target="_self" class="enlace">Enlace con atributo _self</a>
+                <a href="https:/www.google.com/" target="_blank" class="enlace">Enlace con atributo _blank</a>
+                <a href="https:/www.google.com/" target="_parent" class="enlace">Enlace con atributo _parent</a>
+                <a href="https:/www.google.com/" target="_top" class="enlace">Enlace con atributo _top</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Imágenes</h2>
+        <p>Las imágenes pueden mejorar el diseño y la apariencia de una página web.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                &lt;img src="./imagen.jpg" alt="imagendebosque"&gt;
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <img src="./images/imagen.jpg" alt="imagendebosque">
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Tablas</h2>
+        <p>Las tablas te permiten organizar los datos en filas y columnas.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;table&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Compañía&lt;/th&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Contacto&lt;/th&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;País&lt;/th&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alfreds Futterkiste&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria Anders&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alemania&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;México&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Ernst Handel&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Roland Mendel&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Austria&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Island Trading&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Helen Bennett&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;UK&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Laughing Bacchus Winecellars&lt;/td&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Yoshi Tannamuri&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Canada&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Magazzini Alimentari Riuniti&lt;/td&gt;
+                </div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Giovanni Rovelli&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Italia&lt;/td&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</div>
+                <div class="space">&lt;/table&gt;</div><br>
+                <div class="space">&lt;style&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;td, th {</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid #f0aa29;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 8px;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition: .5s;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;td:hover {</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #f0aa29;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;tr:nth-child(even) {</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f0aa29;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&lt;/style&gt;</div>
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <table>
+                    <tr>
+                        <th>Compañía</th>
+                        <th>Contacto</th>
+                        <th>País</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Alemania</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>México</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italia</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Listas</h2>
+        <p>Las listas te permiten agrupar un conjunto de elementos relacionados en listas.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;ul&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Te&lt;/li&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Leche&lt;/li&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Galletas&lt;/li&gt;</div>
+                <div class="space">&lt;/ul&gt;</div><br>
+                <div class="space">&lt;ol&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Te&lt;/li&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Leche&lt;/li&gt;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Galletas&lt;/li&gt;</div>
+                <div class="space">&lt;/ol&gt;</div>
+                <div class="space"></div>
+            </div>
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <ul>
+                    <li>Café</li>
+                    <li>Te</li>
+                    <li>Leche</li>
+                    <li>Galletas</li>
+                </ul><br>
+                <ol>
+                    <li>Café</li>
+                    <li>Te</li>
+                    <li>Leche</li>
+                    <li>Galletas</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Elementos de bloque y en línea</h2>
+        <p>Cada elemento HTML tiene un valor de visualización predeterminado, dependiendo del tipo de elemento que sea.</p>
+        <p>Hay dos valores de visualización: <b>bloque</b> y <b>en línea</b>.</p>
+        <div class="multi multiHtml">
+            <h4>Elementos de tipo bloque:</h4>
+            <div class="code" id="htmlCode">
+                <div class="bloque">
+                    &lt;address&gt;
+                    &lt;article&gt;
+                    &lt;aside&gt;
+                    &lt;blockquote&gt;
+                    &lt;canvas&gt;
+                    &lt;dd&gt;
+                    &lt;dl&gt;
+                    &lt;dt&gt;
+                    &lt;fieldset&gt;
+                    &lt;figcaption&gt;
+                    &lt;figure&gt;
+                    &lt;footer&gt;
+                    &lt;form&gt;
+                    &lt;h1&gt;
+                    &lt;h2&gt;
+                    &lt;h3&gt;
+                    &lt;h4&gt;
+                    &lt;h5&gt;
+                    &lt;h6&gt;
+                    &lt;header&gt;
+                    &lt;hr&gt;
+                    &lt;li&gt;
+                    &lt;main&gt;
+                    &lt;nav&gt;
+                    &lt;noscript&gt;
+                    &lt;ol&gt;
+                    &lt;p&gt;
+                    &lt;pre&gt;
+                    &lt;section&gt;
+                    &lt;table&gt;
+                    &lt;tfoot&gt;
+                    &lt;ul&gt;
+                    &lt;video&gt;
+                </div>
+            </div>
+            <h4>Elementos de tipo en línea:</h4>
+            <div class="code" id="htmlCode">
+                <div class="linea">
+                    &lt;a&gt;
+                    &lt;abbr&gt;
+                    &lt;acronym&gt;
+                    &lt;b&gt;
+                    &lt;bdo&gt;
+                    &lt;big&gt;
+                    &lt;br&gt;
+                    &lt;button&gt;
+                    &lt;cite&gt;
+                    &lt;code&gt;
+                    &lt;dfn&gt;
+                    &lt;em&gt;
+                    &lt;i&gt;
+                    &lt;img&gt;
+                    &lt;input&gt;
+                    &lt;kbd&gt;
+                    &lt;label&gt;
+                    &lt;map&gt;
+                    &lt;object&gt;
+                    &lt;output&gt;
+                    &lt;q&gt;
+                    &lt;samp&gt;
+                    &lt;script&gt;
+                    &lt;select&gt;
+                    &lt;small&gt;
+                    &lt;span&gt;
+                    &lt;strong&gt;
+                    &lt;sub&gt;
+                    &lt;sup&gt;
+                    &lt;textarea&gt;
+                    &lt;time&gt;
+                    &lt;tt&gt;
+                    &lt;var&gt;
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Clases</h2>
+        <p>El atributo class de HTML te permite especificar una clase para un elemento.</p>
+        <p>Varios elementos HTML pueden compartir la misma clase.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;p class="londres"&gt;Londres es la capital de &lt;span
+                    class="pequeno"&gt;Inglaterra&lt;/span&gt;.&lt;/p&gt;</div>
+                <div class="space">&lt;p class="paris"&gt;Paris es la capital de &lt;span
+                    class="mediano"&gt;Francia&lt;/span&gt;.&lt;/p&gt;</div>
+                <div class="space">&lt;p class="tokio"&gt;Tokio es la capital de &lt;span
+                    class="grande"&gt;Japón&lt;/span&gt;.&lt;/p&gt;</div>
+                <div class="space">&lt;style&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;.londres{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #02ff4e;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;.paris{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #0252ff;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #fff;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;.tokio{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #ff029e;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #fff;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;.pequeno{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: .8em;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;.mediano{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.3em;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;.grande{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 2em;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&lt;/style&gt;</div>
+            </div>
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <div class="space">
+                    <p class="londres">Londres es la capital de <span class="pequeno">Inglaterra</span>.</p>
+                </div>
+                <div class="space">
+                    <p class="paris">Paris es la capital de <span class="mediano">Francia</span>.</p>
+                </div>
+                <p class="tokio">Tokio es la capital de <span class="grande">Japón</span>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>ID</h2>
+        <p>El atributo id de HTML te permite especificar una identificación única para un elemento HTML.</p>
+        <p>No puedes tener más de un elemento con la misma identificación en un documento HTML.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;h1 id="titulo"&gt;Soy un título&lt;/h1&gt;</div><br>
+                <div class="space">&lt;p id="parrafo"&gt;Soy un párrafo&lt;/p&gt;</div><br>
+                <div class="space">&lt;style&gt;</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;#titulo{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: skyblue;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;#parrafo{</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: skyblue;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: black;</div>
+                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;}</div><br>
+                <div class="space">&lt;/style&gt;</div>
+            </div>
+            
+            <div class="result">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="resultado">
+                <div class="space">
+                    <h1 id="titulo">Soy un título</h1>
+                </div>
+                <p id="parrafo">Soy un párrafo</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Iframes</h2>
+        <p>Un elemento <b>iframe</b> se utiliza para mostrar un sitio web dentro de un sitio web.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                &lt;iframe src="./html.html" title="Página HTML" width="100%" height="300px"&gt;&lt;/iframe&gt;
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            
+            <div class="resultado">
+                <iframe src="./html.html" title="Página HTML" width="100%" height="300px"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="textContainer">
+        <h2>Javascript</h2>
+        <p>JavaScript hace que las páginas web sean dinámicas e interactivas.</p>
+        
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">&lt;h1&gt;Mi primer JavaScript&lt;/h1&gt;</div><br>
+                <div class="space">&lt;button type="button" onclick="document.getElementById('demo').innerHTML = Date()"&gt;
+                    Click me to display Date and Time&lt;/button&gt;</div><br>
+                &lt;p id="demo"&gt;&lt;/p&gt;
+            </div>
+            
+            <div class="result">
+                <h4>Resultado:</h4>
+            </div>
+            <div class="resultado">
+                <div class="space">
+                    <h1>Mi primer JavaScript</h1>
+                </div><br>
+                <div class="space"><button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Mostrar fecha
+                        actual</button></div><br>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Rutas de archivos</h2>
+        <p>Una ruta de archivo describe la ubicación de un archivo en la estructura de carpetas de un sitio web.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+            <h4>Ejemplo:</h4>
+        </div>
+        <div class="code" id="htmlCode">
+            <div class="space">&lt;img src="imagen.jpg"&gt;</div>
+            <div class="space">El archivo "imagen.jpg" se encuentra en la misma carpeta que la página actual.</div><br>
+            <div class="space">&lt;img src="imagenes/imagen.jpg"&gt;</div>
+            <div class="space">El archivo "imagen.jpg" se encuentra la carpeta de imágenes.</div><br>
+            <div class="space">&lt;img src="/imagenes/imagen.jpg"&gt;</div>
+            <div class="space">El archivo "imagen.jpg" se encuentra la carpeta de imágenes en la raíz de la página web actual.</div><br>
+            <div class="space">&lt;img src="../imagen.jpg"&gt;</div>
+            El archivo "imagen.jpg" se encuentra en la carpeta un nivel más arriba de la carpeta actual.
+        </div>
+        
+        </div>
+        <p>Es una buena práctica utilizar rutas relativas (si es posible).</p>
+        <p>Cuando utilices rutas relativas, tus páginas web no estarán vinculadas a la URL base actual. Todos los enlaces
+            funcionarán en tu computadora (localhost) y también en tu dominio público futuro.</p>
+    </section>
+
+    <section class="textContainer">
+        <h2>Etiqueta Head</h2>
+        <p>La etiqueta &lt;<b>head</b>&gt; es el contenedor de los elementos: &lt;<b>title</b>&gt;, &lt;<b>style</b>&gt;, &lt;<b>meta</b>&gt;, &lt;<b>link</b>&gt;, &lt;<b>script</b>&gt;, y &lt;<b>base</b>&gt;.</p>
+        <p>El elemento &lt;<b>head</b>&gt; es un contenedor de metadatos y se coloca entre la etiqueta &lt;<b>html</b>&gt; y la etiqueta &lt;<b>body</b>&gt;.</p>
+        <p>Los metadatos definen el título del documento, el conjunto de caracteres, los estilos, los scripts y otra metainformación.</p>
+        <div class="multi multiHtml">
+            <div class="example">
+                <h4>Ejemplo:</h4>
+            </div>
+            <div class="code" id="htmlCode">
+                <div class="space">Define el juego de carácteres que utilizaras en este caso será la codificación UTF-8:</div><br>
+                <div class="space">&lt;meta charset="UTF-8"&gt;</div><br>
+                <div class="space">Define las palabras claves para los motores de búsqueda:</div>
+                <div class="space">&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</div><br>
+                <div class="space">Define una descripción para tu página web.</div><br>
+                <div class="space">&lt;meta name="description" content="Free Web tutorials"&gt;</div><br>
+                <div class="space">Define el autor de una página web:</div><br>
+                <div class="space">&lt;meta name="author" content="John Doe"&gt;</div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Elementos</h2>
+        <img src="./images/grid.png" alt="">
+        <p>Los sitios web suelen mostrar contenido en varias columnas (como una revista o un periódico).</p>
+        <p><b>&lt;header&gt;:</b> Se utiliza para crear un encabezado para un documento o una sección.</p>
+        <p><b>&lt;nav&gt;:</b> Se utiliza para crear un conjunto de enlaces de navegación.</p>
+        <p><b>&lt;section&gt;:</b> Crea una sección en un documento.</p>
+        <p><b>&lt;article&gt;:</b> Crea un contenido autónomo e independiente.</p>
+        <p><b>&lt;aside&gt;:</b> Crea contenido aparte del contenido (como una barra lateral).</p>
+        <p><b>&lt;footer&gt;:</b> Crea un pie de página para un documento o una sección.</p>
+        <p><b>&lt;details&gt;:</b> Te permite crear detalles adicionales que el usuario puede abrir y cerrar bajo demanda.</p>
+        <p><b>&lt;summary&gt;:</b> Te permite crear un encabezado para el elemento <b>&lt;details&gt;</b>.</p>
+        <br>
+        
+        
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Técnicas de Diseño</h2>
+        <p>Existen cuatro técnicas para crear diseños:</p>
+        <ul>
+            <li><b>Usando un Framework:</b></li>
+            <p>Puedes utilizar boostrap para crear tus diseños facilmente.</p>
+            <li><b>Usando la propiedad float:</b></li>
+            <p>Es común hacer diseños utilizando la propiedad float de css. Los elementos flotantes están vinculados al flujo de los documentos, que puede dañar la flexibilidad.</p>
+            <li><b>Usando flexbox:</b></li>
+            <p>El uso de flexbox asegura que los elementos se comporten de manera predecible cuando el diseño de la página debe adaptarse a diferentes tamaños de pantalla y diferentes dispositivos de visualización.</p>
+            <li><b>Usando grid:</b></li>
+            <p>Grid está basado en cuadrículas, filas y columnas, lo que facilita el diseño de páginas web sin tener que usar elementos flotantes y posicionamiento.</p>
+        </ul>
+    
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Diseño Adaptable</h2>
+        <p>El diseño web adaptable (responsive) consiste en crear páginas web que se vean bien en todos los dispositivos.</p>
+        <p>Un diseño adaptable se ajustará automaticamente a diferentes tamaños de pantalla y vistas.</p>
+        
+        
+        
+        
+        
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Computercode</h2>
+        <p>HTML contiene varios elementos para definir la entrada del usuario y el código de computadora.</p>
+        <br>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Semántica</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Guía de Estilos</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Entidades</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Símbolos</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+    
+    <section class="textContainer">
+        <h2>Emojis</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Charset</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>URL Encode</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>XHTML</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Formulario</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Canvas</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Svg</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Media</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+    
+    <section class="textContainer">
+        <h2>Video</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Audio</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Plug-in</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Youtube</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Geolocation</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Drag/Drop</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Almacenamiento</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>Web Workers</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+        
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <section class="textContainer">
+        <h2>SSE</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+        <h4>Ejemplo:</h4>
+        <div class="code" id="htmlCode">
+            
+        </div>
+        <h4>Ejemplo:</h4>
+        <div class="result">
+        
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>

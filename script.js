@@ -64,3 +64,12 @@ $cards.find('.js-collapser').click(function () {
   $thisCard.removeClass('is-expanded').addClass('is-collapsed');
   $cards.not($thisCard).removeClass('is-inactive');
 });
+
+
+//timeline scripts
+
+
+
+
+
+//timeline scripts

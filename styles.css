@@ -87,7 +87,7 @@ a {
 }
 
 .htmlBar {
-  background: #ff7f48;
+  background: #ff9161;
 }
 
 .cssBar {
@@ -1232,94 +1232,36 @@ a.article, a.article:hover {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,400,900");
-a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
-  position: fixed;
-  font-family: "Montserrat";
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-  left: 40px;
-  bottom: 0px;
-  font-size: 12px;
-  text-decoration: none;
-  background: #f7f7f7;
-  padding: 4px 8px;
-  z-index: 10;
-  color: #3B425A;
-}
-a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
-  background: #7B46FE;
-  color: #FDFA75;
-}
 
-body {
-  background: #32384f;
-  padding: 0;
-  margin: 0;
-  color: #FFF;
-}
 
-h1 {
-  font-size: 56px;
-  font-weight: 400;
-  color: #7045ff;
-  position: relative;
-}
-h1:after {
-  content: "";
-  padding-bottom: 30px;
-  display: block;
-  border-bottom: 1px solid #464c63;
-  width: 60%;
-}
-
-h2 {
-  font-size: 36px;
-  font-weight: 100;
-  color: #83ffe1;
-  position: relative;
-}
 
 .timeline {
   margin: 0;
   padding: 0;
   list-style: none;
   position: fixed;
-  left: 100px;
+  left: 20px;
   top: 5%;
   width: 1px;
   height: 90%;
-  background: #464c63;
+  background: #000;
+  display: block;
 }
+
 .timeline .bar {
   position: absolute;
   width: 1px;
-  background-color: #fcf769;
-  top: 0;
+  background-color: #00ff00;
+  top: 0px;
   left: 0;
   z-index: 0;
-}
-
-.container {
-  padding-left: 200px;
-}
-
-section {
-  border-top: 2px solid #fcf769;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: 200;
-  font-family: "Montserrat";
-}
-
-p {
-  line-height: 2;
 }
 
 .node {
   position: absolute;
   width: 3px;
   height: 3px;
-  background: #FFF;
+  background: #00ff00;
   left: -1px;
   z-index: 1;
   cursor: pointer;
@@ -1340,18 +1282,16 @@ p {
   top: -3px;
 }
 .node span {
-  transition: all 0.4s ease-out;
+  transition: all 0.s ease-out;
   text-transform: uppercase;
-  right: 4px;
   top: -16px;
-  color: #FFFFFF;
+  color: #000;
   position: absolute;
-  padding: 10px;
+  padding: 7px;
   white-space: nowrap;
   font-size: 10px;
   font-weight: 200;
-  font-family: "Montserrat";
-  opacity: 0;
+  opacity: .5;
 }
 
 

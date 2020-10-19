@@ -70,7 +70,7 @@ $cards.find('.js-collapser').click(function () {
 
 $(function () {
   function sumSection() {
-    return $(".container").height();
+    return $(".container2").height();
   }
   function setDimensionBar() {
     $(".bar").css({

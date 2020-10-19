@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -51,10 +53,9 @@ header {
 .navbar-brand {
   font-size: 1.5em;
 }
+
 body {
-  font-family: Helvetica;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -428,7 +429,7 @@ a {
 /*htmlCourse*/
 
 #html {
-  background: #f06529;
+  background: #db6634;
 }
 
 /*htmlCourse*/
@@ -1085,9 +1086,7 @@ a.article, a.article:hover {
 }
 
 .card__inner {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00ff00, #22a822);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ff00, #22a822); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2951be;  /* fallback for old browsers */
   color: #eceef1;
   cursor: pointer;
   font-size: 1.5em;
@@ -1095,7 +1094,7 @@ a.article, a.article:hover {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  transition: .5s all ease-in;
+  transition: .5s ease-in;
   width: 100%;
   border-radius: 5px;
   width: 60%;
@@ -1104,9 +1103,7 @@ a.article, a.article:hover {
 }
 
 .card__inner:hover{
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #22a822, #00ff00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #22a822, #00ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00ff00;  /* fallback for old browsers */
 }
 
 .card__inner:after {
@@ -1282,16 +1279,16 @@ a.article, a.article:hover {
   top: -3px;
 }
 .node span {
-  transition: all 0.s ease-out;
+  transition: all .5s ease-out;
   text-transform: uppercase;
-  top: -16px;
-  color: #000;
+  top: -20px;
+  color: #fff;
   position: absolute;
-  padding: 7px;
   white-space: nowrap;
   font-size: 10px;
   font-weight: 200;
   opacity: .5;
+  margin: 10px;
 }
 
 

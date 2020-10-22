@@ -3,121 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CURSOS | PRACTICA Y APRENDE DESARROLLO WEB.</title>
+    <title>CURSOS</title>
     <script src="https://kit.fontawesome.com/ee58ac8eb1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">Splashtack</a> 
+  
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      
+      <div class="m-2">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+        
+        <ul>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item">
-                <a class="nav-link active" href="cursos.html">Cursos<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-              </li>
-            </ul>
-           
-            <ul class="navbar-nav ml-auto">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-              </form>
-          </div>
+            <li>
+                <a href="html.html">HTML</a>
+            </li>
+            <li>
+                <a href="css.html">CSS</a>
+            </li>
+            <li>
+                <a href="sass.html">SASS</a>
+            </li>
+            <li>
+                <a href="sass.html">JAVASCRIPT</a>
+            </li>
+            <li>
+                <a href="sass.html">JQUERY</a>
+            </li>
+            <li>
+                <a href="git.html">GIT</a>
+            </li>
+            <li>
+                <a href="typescript.html">TYPESCRIPT</a>
+            </li>
+            <li>
+                <a href="angular.html">ANGULAR</a>
+            </li>
+            <li>
+                <a href="react.html">REACT</a>
+            </li>
+            <li>
+                <a href="vue.html">VUE</a>
+            </li>
+            <li>
+                <a href="sql.html">SQL</a>
+            </li>
+            <li>
+                <a href="php.html">PHP</a>
+            </li>
+            <li>
+                <a href="laravel.html">LARAVEL</a>
+            </li>
+            
+            <li>
+                <a href="mysql.html">MYSQL</a>
+            </li>
+            <li>
+                <a href="python.html">PYTHON</a>
+            </li>
+            <li>
+                <a href="python.html">DJANGO</a>
+            </li>
+            <li>
+                <a href="node.html">NODEJS</a>
+            </li>
+            <li>
+                <a href="expressjs.html">EXPRESS</a>
+            </li>
+            <li>
+                <a href="mongodb.html">MONGODB</a>
+            </li>
+            <li>
+                <a href="mongodb.html">DOCKER</a>
+            </li>
+            
         </ul>
-    </header>
-    <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="list-group-flush">
-          <a href="angular.html" class="list-group-item list-group-item-action  bg-light">Angular</a>
-          <a href="css.html" class="list-group-item list-group-item-action bg-light">CSS</a>
-          <a href="git.html" class="list-group-item list-group-item-action bg-light">GIT</a>
-          <a href="html.html" class="list-group-item list-group-item-action bg-light">HTML</a>
-          <a href="javascript.html" class="list-group-item list-group-item-action bg-light">Javascript</a>
-          <a href="php.html" class="list-group-item list-group-item-action bg-light">PHP</a>
-          <a href="mysql.html" class="list-group-item list-group-item-action bg-light">MySQL</a>
-          <a href="sql.html" class="list-group-item list-group-item-action bg-light">SQL</a>
-          <a href="mongodb.html" class="list-group-item list-group-item-action bg-light">MongoDB</a>
-          <a href="react.html" class="list-group-item list-group-item-action bg-light">React</a>
-          <a href="typescript.html" class="list-group-item list-group-item-action bg-light">Typescript</a>
+
+        
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto gree">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="p-3">
+            
+<div class="cards">
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/html.png" width="100px" height="100px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>
+        <div class="ula">
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
+          <a href="#">Project #01</a>
         </div>
       </div>
-
-      <div id="main">
-        <h1 class="cursos-header">Cursos Oferecidos:</h1>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/CSS3.svg" width="100px" height="100px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #2</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/sass.png" width="100px" height="100px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #3</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/javascript.png" width="80px" height="80px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #4</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/jquery.png" width="80px" height="80px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #5</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/git.png" width="80px" height="80px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #6</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/typescript.png" width="80px" height="80px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #7</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/angular.png" width="100px" height="100px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #8</div>
+    </div>
+    <div class="card is-collapsed">
+      <div class="card__inner js-expander"><span><img src="./images/react.png" width="100px" height="100px" alt=""></span></div>
+      <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #9</div>
+    </div>
+    <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/vue.png" width="80px" height="80px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #10</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/sql.png" width="100px" height="100px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #11</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/php.png" width="100px" height="70px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #12</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/laravel.png" width="80px" height="80px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #13</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/mysql.png" width="80px" height="80px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #14</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/python.png" width="80px" height="80px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #15</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/django.png" width="120px" height="100px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #16</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/node.svg" width="100px" height="100px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #17</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/mongodb.png" width="100px" height="100px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #18</div>
+      </div>
+      <div class="card is-collapsed">
+        <div class="card__inner js-expander"><span><img src="./images/docker.png" width="100px" height="80px" alt=""></span></div>
+        <div class="card__expander"><i class="fa fa-close js-collapser"> </i>  Expander #19</div>
+      </div>
+  </div>
+        </div>
         
-          <div class="row">
-           
-             
-              <div class="card-deck">
-                <div class="card">
-                  <a href="angular.html"><img class="card-img-top" src="images/angular.png"  alt="Card image cap"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">Angular</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <a href="css.html"><img class="card-img-top" src="images/CSS3.svg" alt="Card image cap"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">CSS3</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <a href="git.html"><img class="card-img-top" src="images/git.png" alt="Card image cap"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">GIT</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
 
-                <div class="card">
-                  <a href="html.html"><img class="card-img-top" src="images/html.png" alt="Card image cap"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">HTML5</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+  <!-- Copyright -->
+  <div class="bg-dark text-white text-center p-3">© 2020 Copyright:
+    <a href="index.html">Splashtack</a>
+  </div>
+  <!-- Copyright -->
 
+</footer>
+<!-- Footer -->
 
-                <div class="card">
-                  <a href="javascript.html"><img class="card-img-top" src="images/javascript.png" alt="Card image cap"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">Javascript</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+<script src="./script.js"></script>
 
-                <div class="card">
-                  <a href="php.html"><img class="card-img-top" src="images/php.png" alt="Card image cap"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">PHP</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-
-              </div>
-
-              
-
-
-              </div>
-
-                  </div>
-      </body>
+</body>
 </html>

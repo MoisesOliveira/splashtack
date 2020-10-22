@@ -1,28 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 /* header bg changes */
-
-.navbar{
-    background-image: linear-gradient(to right,rgb(77, 23, 148),rgb(89, 54, 134));
-    padding: 0%;
-}
-
-.banner{
-    background-image: linear-gradient(to right,rgb(77, 23, 148),rgb(89, 54, 134));
-    padding-top: 7%;
-    color: white;
-}
-.brand{
-    font-size: 50px;
-    font-weight: 400;
-    margin-top: 60px;
-    margin-bottom: 50px;
-
 .navbar {
   background-image: linear-gradient(
     to right,
@@ -46,19 +30,7 @@
   font-weight: 400;
   margin-top: 60px;
   margin-bottom: 50px;
-
 }
-
-.card img{
-    height: 200px;
-    width: 250px;
-    text-align: center;
-}
-
-.card{
-    width: 270px;
-}
-
 /* Index Footer center aligment*/
 footer {
   margin: 0;
@@ -81,10 +53,9 @@ header {
 .navbar-brand {
   font-size: 1.5em;
 }
+
 body {
-  font-family: Helvetica;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -117,7 +88,7 @@ a {
 }
 
 .htmlBar {
-  background: #ff7f48;
+  background: #ff9161;
 }
 
 .cssBar {
@@ -323,11 +294,10 @@ a {
   transition: 0.3s;
 }
 
-
-#main{
-    margin-left: 230px;
-    margin-right: 20px;
-
+#main {
+  margin-left: 220px;
+  margin-right: 20px;
+}
 
 .cursos-header {
   text-align: center;
@@ -459,7 +429,7 @@ a {
 /*htmlCourse*/
 
 #html {
-  background: #f06529;
+  background: #db6634;
 }
 
 /*htmlCourse*/
@@ -882,10 +852,6 @@ tr:nth-child(even) {
   background: #f0db4f;
 }
 
-.multi h4 {
-  letter-spacing: 1px;
-}
-
 .practica {
   background: #aa2aca;
   color: #fff;
@@ -897,7 +863,7 @@ tr:nth-child(even) {
   transition: 0.5s;
 }
 
-.practica:hover {
+.practica:hover { 
   background: #9625b3;
 }
 
@@ -923,11 +889,439 @@ tr:nth-child(even) {
 
 .fa-arrow-left {
   transition: 0.3s;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 100px;
+  color: #fff;
 }
 
 .fa-arrow-left:hover {
-  font-size: 1.5em;
+  color: rgb(0, 255, 0);
+  background: #2c3d86;
 }
+
+.navbar {
+  background:#2c3d86;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed rgb(207, 24, 24);
+  margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+  SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  perspective: 1500px;
+}
+
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #485db1;
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+  transform-origin: bottom left;
+}
+
+
+#sidebar.active {
+  margin-left: -250px;
+  transform: rotateY(100deg);
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  transition: .5s;
+  text-decoration: none;
+  color: #fff;
+}
+
+#sidebar ul li a:hover {
+  background: #2c3d86;
+  color: rgb(0, 255, 0);
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #384faa;
+}
+
+a.article, a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+  CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+#sidebarCollapse {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 5px;
+  background: #0b2644;
+}
+
+#sidebarCollapse:hover{
+  background: rgb(0, 0, 0);
+}
+
+#sidebarCollapse span {
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  display: block;
+  background: rgb(0, 255, 0);
+  transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+  transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+  opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+#sidebarCollapse.active span {
+  transform: none;
+  opacity: 1;
+  margin: 5px auto;
+}
+
+
+.bg-menu{
+  background: #2c3d86;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+.card {
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  
+}
+
+.card__inner {
+  background: #2951be;  /* fallback for old browsers */
+  color: #eceef1;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s ease-in;
+  width: 100%;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
+
+.card__inner:hover{
+  background: #00ff00;  /* fallback for old browsers */
+}
+
+.card__inner:after {
+  transition: all 0.3s ease-in-out;
+}
+
+.card__expander {
+  align-items: center;
+  background-color: rgb(0, 255, 0);
+  color: #eceef1;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  width: 60%;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.card__expander .fa {
+  font-size: 0.75em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.card__expander .fa:hover {
+  opacity: 0.9;
+}
+
+.card.is-collapsed .card__inner:after {
+  content: "";
+  opacity: 0;
+}
+
+.card.is-collapsed .card__expander {
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  max-height: 0;
+  min-height: 0;
+}
+
+.card.is-expanded .card__inner {
+  background-color: rgb(0, 255, 0);
+}
+
+.card.is-expanded .card__inner:after {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid  rgb(0, 255, 0);
+  bottom: -30px;
+  content: "";
+  display: block;
+  height: 0;
+  left: calc(50% - 15px);
+  opacity: 1;
+  position: absolute;
+  width: 0;
+}
+
+.card.is-expanded .card__expander {
+  margin-top: 30px;
+  max-height: 1000px;
+  min-height: 200px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.card.is-expanded:hover .card__inner {
+  transform: scale(1);
+}
+
+.card.is-inactive .card__inner {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.card.is-inactive:hover .card__inner {
+  background-color: #6582aa;
+  transform: scale(1);
+}
+
+.gree{
+  text-align: center;
+}
+
+.ula{
+  margin: 50px;
+  width: 100%;
+}
+
+
+
+.ula > a{
+  transition: .5s;
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-transform: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.ula > a:hover{
+  background: #000;
+  color: rgb(0, 255, 0);
+}
+
+.logo{
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.p-3{
+  background: #454599;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,400,900");
+
+
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  left: 20px;
+  top: 5%;
+  width: 1px;
+  height: 90%;
+  background: #000;
+  display: block;
+}
+
+.timeline .bar {
+  position: absolute;
+  width: 1px;
+  background-color: #00ff00;
+  top: 0px;
+  left: 0;
+  z-index: 0;
+}
+
+.node {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #00ff00;
+  left: -1px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.node:hover {
+  background: #46ffdd;
+}
+.node:hover span {
+  opacity: 1;
+}
+.node:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: -3px;
+  top: -3px;
+}
+.node span {
+  transition: all .5s ease-out;
+  text-transform: uppercase;
+  top: -20px;
+  color: #fff;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 200;
+  opacity: .5;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*animations*/
 
@@ -951,4 +1345,42 @@ tr:nth-child(even) {
   .projectContainer > div {
     width: 100%;
   }
+
+
+  #sidebar {
+    margin-left: -250px;
+    transform: rotateY(90deg);
+}
+#sidebar.active {
+    margin-left: 0;
+    transform: none;
+}
+#sidebarCollapse span:first-of-type,
+#sidebarCollapse span:nth-of-type(2),
+#sidebarCollapse span:last-of-type {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+#sidebarCollapse.active span {
+    margin: 0 auto;
+}
+#sidebarCollapse.active span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse.active span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse.active span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.card__expander{
+  width: 100%;
+}
+
+.card__inner{
+  width: 100%;
+}
+
 }
